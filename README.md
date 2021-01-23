@@ -10,20 +10,15 @@
 
 ## Question 1 (10 Points. Medium)
 
-Use proof by contradiction to prove that the FindMax function always finds the maximum value in the input vector.
+Use proof by contradiction to prove that the FindAverage function always finds the Average value in the input vector.
 
 ```cpp
-int FindMax(std::vector<int> &inputs) {
-   if (inputs.size() == 0) {
-       return -1;
-   }
-   int result = INT32_MIN;
-   for (auto n : inputs) {
-       if (n > result) {
-           result = n;
-       }
-   }
-   return result;
+float FindAverage(std::vector<float> &inputs) {
+  float sum = 0.0f;
+  for (auto i : inputs) {
+    sum += i;
+  }
+  return sum / inputs.size();
 }
 ```
 
