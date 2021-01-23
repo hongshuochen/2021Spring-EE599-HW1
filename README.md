@@ -10,7 +10,7 @@
 
 ## Question 1 (10 Points. Medium)
 
-Use proof by contradiction to prove that the FindAverage function always finds the Average value in the input vector.
+Use proof by contradiction to prove that the FindAverage function always finds the average value of input vector.
 
 ```cpp
 float FindAverage(std::vector<float> &inputs) {
