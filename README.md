@@ -133,17 +133,17 @@ bazel test tests:q6_student_test
 
 ## Question 7 (30 Points. Medium)
 
-Write a function ```double CPPLib::CalFactorial(int N)``` in [cpplib.cc](src/lib/cpplib.cc) using recursion to find the factorial of any number. Your function should accept positive numbers and return the factorial value. Further, write several tests using GTest for your function in [tests/q7_student_test.cc](tests/q7_student_test.cc) and compute the time complexity of your implementation.
+Write a function ```int CPPLib::climbStairs(int n)``` in [cpplib.cc](src/lib/cpplib.cc) using recursion to find how many distinct ways can you climb to the top. Your function should accept positive numbers less than 45 and return the number of ways. Further, write several tests using GTest for your function in [tests/q7_student_test.cc](tests/q7_student_test.cc) and compute the time complexity of your implementation.
 
-*Definition of the factorial function*\
-In mathematics, the factorial of a positive integer n, denoted by n!, is the product of all positive integers less than or equal to n:
+*Rules of the climb stairs*\
+You are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps.
 
-```
-n ! = n x (n - 1) x (n - 2) x (n - 3) ... (3) x (2) x (1)
-```
-
-For example, 4! = 4 × 3 × 2 × 1 = 24.\
-The value of 0! is 1. For negative input, please return -1.
+For example, if the stairs number is 4(n = 4), it should have 5 ways to the top.\
+1 + 1 + 1 + 1\
+1 + 1 + 2\
+1 + 2 + 1\
+2 + 1 + 1\
+2 + 2
 
 Please create your test cases and run the following command to verify the functionality of your program.
 ```
