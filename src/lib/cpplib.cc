@@ -20,4 +20,5 @@ std::vector<int> CPPLib::ChooseOddElement(const std::vector<int> &input) {
 // Question 7 Climbing Stairs
 int CPPLib::climbStairs(int n){
     // Please fill up this function.
+    return 0;
 }
