@@ -138,6 +138,8 @@ Write a function ```int CPPLib::climbStairs(int n)``` in [cpplib.cc](src/lib/cpp
 *Rules of the climb stairs*\
 You are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps.
 
+If there is 0 stair, there is 0 way to the top. For negative input, please return -1.
+
 For example, if the stairs number is 4(n = 4), it should have 5 ways to the top.\
 1 + 1 + 1 + 1\
 1 + 1 + 2\
