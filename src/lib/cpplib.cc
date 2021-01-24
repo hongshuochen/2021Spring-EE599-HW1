@@ -17,8 +17,7 @@ std::vector<int> CPPLib::Flatten2DVector(const std::vector<std::vector<int>> &in
     return res;
 }
 
-// Question 7 Calculate the factorial number
-double CPPLib::CalFactorial(int N) {
+// Question 7 Climbing Stairs
+int CPPLib::climbStairs(int n){
     // Please fill up this function.
-    return 0;
 }
