@@ -117,11 +117,11 @@ bazel test tests:q5_student_test
 
 ## Question 6 (25 Points. Medium)
 
- Write a function ```std::vector<int> CPPLib::Flatten2DVector(const std::vector<std::vector<int>> &input)``` in [cpplib.cc](src/lib/cpplib.cc) to flatten a 2D vector into a 1D vector.
+ Write a function ```std::vector<int> CPPLib::ChooseOddElement(const std::vector<int> &input)``` in [cpplib.cc](src/lib/cpplib.cc) to select all the odd elements in input vector into another vector.(Get familiar with functions of vector)
 
 Example:\
-Input: inputs = [[1, 2, 3, 4], [5, 6], [7, 8]].\
-Output: result = [1, 2, 3, 4, 5, 6, 7, 8].
+Input: inputs = [1, 2, 3, 4, 5, 6, 7, 8].\
+Output: result = [1, 3, 5, 7].
 
 Write several tests using GTest for your function in [tests/q6_student_test.cc](tests/q6_student_test.cc).\
 (Hint: inculde cases with empty vectors)

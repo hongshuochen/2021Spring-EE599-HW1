@@ -10,8 +10,8 @@ std::string CPPLib::PrintIntro() {
 }
 
 
-// Question 6  Flatten a 2D vector
-std::vector<int> CPPLib::Flatten2DVector(const std::vector<std::vector<int>> &input) {
+// Question 6
+std::vector<int> CPPLib::ChooseOddElement(const std::vector<int> &input) {
     // Please fill up this function.
     std::vector<int> res = {};
     return res;
