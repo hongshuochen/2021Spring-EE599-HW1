@@ -15,8 +15,8 @@ class CPPLib {
   // Print your self-introduction
   std::string PrintIntro();
   
-  // Calculate the factorial number
-  double CalFactorial(int N);
+  // Climbing Stairs
+  int climbStairs(int n);
   
   // // Flatten a 2D vector
   std::vector<int> Flatten2DVector(const std::vector<std::vector<int>>&input);
