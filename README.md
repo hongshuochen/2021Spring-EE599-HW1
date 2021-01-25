@@ -79,7 +79,7 @@ void Example4(int n) {
             cout<<"*";
 }
 ```
-Hint: Note the ```j < i*i``` in the outer loop and compute the geometrical sequence to get the final result.
+Hint: Note the ```j < i*i``` in the inner loop and compute the geometrical sequence to get the final result.
 
 Answer: 
 
