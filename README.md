@@ -29,7 +29,19 @@ Answer:
 Compute the time complexity of the below functions. Please provide both computation process and final result for full credit.
 
 ```cpp
-void Example3(int n) {
+void Example1(int a = 0, int n) {
+   int i = 1;
+   while (i < n) {
+       a += i;
+       i *= 2;
+   }
+}
+```
+
+Answer:
+
+```cpp
+void Example2(int n) {
    int count = 0;
    for (int i = 1; i <= n; i++) {
        for (int j = 1; j <= n; j = j * 2) {
@@ -44,7 +56,7 @@ void Example3(int n) {
 Answer:
 
 ```cpp
-int Example1(int n) {
+int Example3(int n) {
    int count = 0;
    for (int i = n; i > 0; i /= 3) {
        for (int j = 0; j < i; j++) {
@@ -55,23 +67,21 @@ int Example1(int n) {
 }
 ```
 
-Hint: Nested loops do not always mean O(n^2). Note the ```i /= 3 ``` in the outer loop and compute the geometrical sequence to get the final result.
+Hint: Note the ```i /= 3 ``` in the outer loop and compute the geometrical sequence to get the final result.
 
 Answer:
 
 ```cpp
-void Example2(int a = 0, int n) {
-   int i = 1;
-   while (i < n) {
-       a += i;
-       i *= 2;
-   }
+void Example4(int n) {
+   int count = 0;
+   for (int i = 0; i < n; i++)
+       for (int j = i; j < i*i; j++)
+            cout<<"*";
 }
 ```
-Hint: How many iteration will this ```while``` loop run?
+Hint: Note the ```j < i*i``` in the outer loop and compute the geometrical sequence to get the final result.
 
-Answer:
-
+Answer: 
 
 ## Question 3 (10 Points. Easy)
 
