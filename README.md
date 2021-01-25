@@ -85,12 +85,12 @@ Answer:
 
 ## Question 3 (10 Points. Easy)
 
-What does it mean when we say that the Merge Sort (MS) algorithm is asymptotically more efficient than the Bubble Sort (BS) algorithm? Support your choice with an explanation.
+What does it mean when we say that the Quick Sort (QS) algorithm is asymptotically more efficient than the Insertion Sort (IS) algorithm? Support your choice with an explanation.
 
-1. MS will always be a better choice for small inputs
-2. MS will always be a better choice for large inputs
-3. BS will always be a better choice for small inputs
-4. MS will always be a better choice for all inputs
+1. QS will always be a better choice for small inputs
+2. IS will always be a better choice for small inputs
+3. QS will always be a better choice for large inputs
+4. QS will always be a better choice for all inputs
 
 Answer:
 
