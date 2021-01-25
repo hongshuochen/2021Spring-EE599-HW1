@@ -26,40 +26,14 @@ Answer:
 
 ## Question 2 (20 Points. Medium)
 
-What is the time complexity of the below functions?
-
-```cpp
-int Example1(int n) {
-   int count = 0;
-   for (int i = n; i > 0; i /= 2) {
-       for (int j = 0; j < i; j++) {
-           count += 1;
-       }
-   }
-   return count;
-}
-```
-
-Answer:
-
-```cpp
-void Example2(int a = 0, int n) {
-   int i = n;
-   while (i > 0) {
-       a += i;
-       i /= 2;
-   }
-}
-```
-
-Answer:
+Compute the time complexity of the below functions. Please provide both computation process and final result for full credit.
 
 ```cpp
 void Example3(int n) {
    int count = 0;
-   for (int i=n/2; i<=n; i++) {
-       for (int j=1; j<=n; j = 2 * j) {
-           for (int k=1; k<=n; k = k * 2) {
+   for (int i = 1; i <= n; i++) {
+       for (int j = 1; j <= n; j = j * 2) {
+           for (int k = 1; k <= n; k = k * 2) {
                count++;
            }
        }
@@ -70,19 +44,34 @@ void Example3(int n) {
 Answer:
 
 ```cpp
-void Example4(int n) {
+int Example1(int n) {
    int count = 0;
-   for (int i=0; i<n; i++)
-       for (int j=i; j< i*i; j++)
-           if (j%i == 0)
-           {
-               for (int k=0; k<j; k++)
-                   cout<<"*";
-           }
+   for (int i = n; i > 0; i /= 3) {
+       for (int j = 0; j < i; j++) {
+           count += 1;
+       }
+   }
+   return count;
 }
 ```
 
+Hint: Nested loops do not always mean O(n^2). Note the ```i /= 3 ``` in the outer loop and compute the geometrical sequence to get the final result.
+
 Answer:
+
+```cpp
+void Example2(int a = 0, int n) {
+   int i = 1;
+   while (i < n) {
+       a += i;
+       i *= 2;
+   }
+}
+```
+Hint: How many iteration will this ```while``` loop run?
+
+Answer:
+
 
 ## Question 3 (10 Points. Easy)
 
