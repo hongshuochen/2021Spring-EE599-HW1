@@ -1,9 +1,10 @@
 
 # HW1 EE599 - Computing Principles for Electrical Engineers
 
-- Plesae clone the repository, edit [README.md](README.md) to answer the questions, and fill up functions to finish the hw.
-- For non-coding quesitions, you will find **Answer** below each question. Please write your answer there.
-- For coding questions, please make sure that your code can run ```bazel run/test```. In this homework, you will need to fill up [cpplib.cc](src/lib/cpplib.cc), [q5_student_test.cc](tests/q5_student_test.cc), [q6_student_test.cc](tests/q6_student_test.cc), [q7_student_test.cc](tests/q7_student_test.cc) for question  5, 6, 7.
+- Please clone the repository, edit [README.md](README.md) to answer the questions, and fill up functions to finish the hw.
+- For non-coding questions, you will find **Answer** below each question. Please write your answer there.
+- For coding questions, please make sure that your code can run ```bazel run/test```. In this homework, you will need to fill up [cpplib.cc](src/lib/cpplib.cc) and tests in [tests](tests). Do **Not** change or modify any given function names and input or output formats in both [cpplib.cc](src/lib/cpplib.cc) and tests in [tests](tests). Unexpected changes will result in **zero** credit.
+- For coding questions, there is a **black box testing** for each question. All points are only based on passing the test cases or not (i.e. we don't grade your work by your source code). So, try to do comprehensive testing before your final submission.
 - For submission, please push your answers to Github before the deadline.
 - Deadline: Friday, September 4th by 6:30 pm
 - Total: 120 points. 100 points is considered full credit.
