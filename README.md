@@ -151,10 +151,5 @@ Please create your test cases and run the following command to verify the functi
 bazel test tests:q7_student_test
 ```
 
-For question 5, 6, 7, if you want to run all the tests at the same time , you could run
-```
-bazel test tests:tests
-```
-
 Answer:
 
