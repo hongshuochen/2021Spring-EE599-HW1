@@ -1,33 +1,25 @@
 
 # HW1 EE599 - Computing Principles for Electrical Engineers
 
-- Please clone the repository, edit [README.md](README.md) to answer the questions, and fill up functions to finish the hw.
-- For non-coding questions, you will find **Answer** below each question. Please write your answer there.
-- For coding questions, please make sure that your code can run ```bazel run/test```. In this homework, you will need to fill up [cpplib.cc](src/lib/cpplib.cc) and tests in [tests](tests). Do **Not** change or modify any given function names and input or output formats in both [cpplib.cc](src/lib/cpplib.cc) and tests in [tests](tests). Unexpected changes will result in **zero** credit.
-- For coding questions, there is a **black box testing** for each question. All points are only based on passing the test cases or not (i.e. we don't grade your work by your source code). So, try to do comprehensive testing before your final submission.
+- Please clone the repository, edit [README.md](README.md) to answer the questions, and fill up functions to finish the homework.
+- For non-coding questions, fill out the answers below each question. Please write your answer there.
+- For coding questions, please make sure that your code can run ```bazel run/test```. In this homework, you will need to fill up [cpplib.cc](src/lib/cpplib.cc) and tests in [tests](tests). **Do Not change or modify any given function names and input or output formats in both [cpplib.cc](src/lib/cpplib.cc) and tests in [tests](tests). Unexpected changes will result in **zero** credit.**
+- For coding questions, there is a black box testing for each question. All points are only based on passing the test cases or not (i.e. we don't grade your work by your source code). So, try to do comprehensive testing before your final submission.
 - For submission, please push your answers to Github before the deadline.
-- Deadline: Friday, September 4th by 6:30 pm
+- Deadline: Friday, January 29th by 6:30 pm
 - Total: 120 points. 100 points is considered full credit.
 
-## Question 1 (10 Points. Medium)
+## Question 1 (10 Points. Easy)
 
-Use proof by contradiction to prove that the FindAverage function always finds the average value of input vector.
+Create an account on GitHub and Stack Overflow and paste the link to your profile.
 
-```cpp
-float FindAverage(std::vector<float> &inputs) {
-  float sum = 0.0f;
-  for (auto i : inputs) {
-    sum += i;
-  }
-  return sum / inputs.size();
-}
-```
+GitHub profile link:
 
-Answer:
+Stack Overflow profile link:
 
 ## Question 2 (20 Points. Medium)
 
-Compute the time complexity of the below functions. Please provide both computation process and final result for full credit.
+Compute the time complexity of the below functions. Please provide both the computation process and final result for full credit.
 
 ```cpp
 void Example1(int a = 0, int n) {
@@ -68,7 +60,7 @@ int Example3(int n) {
 }
 ```
 
-Hint: Note the ```i /= 3 ``` in the outer loop and compute the geometrical sequence to get the final result.
+Hint: Note the ```i /= 3``` in the outer loop and compute the geometric sequence to get the final result.
 
 Answer:
 
@@ -80,9 +72,10 @@ void Example4(int n) {
             cout<<"*";
 }
 ```
-Hint: Note the ```j < i*i``` in the inner loop and compute the geometrical sequence to get the final result.
 
-Answer: 
+Hint: Note the ```j < i*i``` in the inner loop and compute the geometric sequence to get the final result.
+
+Answer:
 
 ## Question 3 (10 Points. Easy)
 
@@ -95,15 +88,21 @@ What does it mean when we say that the Quick Sort (QS) algorithm is asymptotical
 
 Answer:
 
-## Question 4 (10 Points. Easy)
+## Question 4 (10 Points. Medium)
 
-Create an account on GitHub and Stack Overflow and paste the link to your profile.
+Use proof by contradiction to prove that the FindAverage function always finds the average value of the input vector.
+
+```cpp
+float FindAverage(std::vector<float> &inputs) {
+  float sum = 0.0f;
+  for (auto i : inputs) {
+    sum += i;
+  }
+  return sum / inputs.size();
+}
+```
 
 Answer:
-
-GitHub profile link:
-
-Stack Overflow profile link:
 
 ## Question 5 (15 Points. Easy)
 
@@ -111,34 +110,36 @@ Write a simple function ```std::string CPPLib::PrintIntro()``` in [cpplib.cc](sr
 We will run your code and see your printout!
 
 Please create your test cases and run the following command to verify the functionality of your program.
-```
+
+```bash
 bazel test tests:q5_student_test
 ```
 
 ## Question 6 (25 Points. Medium)
 
- Write a function ```std::vector<int> CPPLib::ChooseOddElement(const std::vector<int> &input)``` in [cpplib.cc](src/lib/cpplib.cc) to select all the odd elements in input vector into another vector.(Get familiar with functions of vector)
+ Write a function ```std::vector<int> CPPLib::ChooseOddElement(const std::vector<int> &input)``` in [cpplib.cc](src/lib/cpplib.cc) to select all the odd elements in the input vector into another vector.(Get familiar with functions of vector)
 
 Example:\
 Input: inputs = [1, 2, 3, 4, 5, 6, 7, 8].\
 Output: result = [1, 3, 5, 7].
 
 Write several tests using GTest for your function in [tests/q6_student_test.cc](tests/q6_student_test.cc).\
-(Hint: include cases with empty vectors)
+(Hint: include corner cases such as an empty vector)
 
 Please create your test cases and run the following command to verify the functionality of your program.
-```
+
+```bash
 bazel test tests:q6_student_test
 ```
 
 ## Question 7 (30 Points. Medium)
 
-Write a function ```int CPPLib::climbStairs(int n)``` in [cpplib.cc](src/lib/cpplib.cc) using recursion to find how many distinct ways can you climb to the top. Your function should accept positive numbers less than 45 and return the number of ways. Further, write several tests using GTest for your function in [tests/q7_student_test.cc](tests/q7_student_test.cc) and compute the time complexity of your implementation.
+Write a function ```int CPPLib::climbStairs(int n)``` in [cpplib.cc](src/lib/cpplib.cc) using recursion to find how many distinct ways you can climb to the top. Your function should accept positive numbers less than 45 and return the number of ways. Further, write several tests using GTest for your function in [tests/q7_student_test.cc](tests/q7_student_test.cc) and compute the time complexity of your implementation.
 
 *Rules of the climb stairs*\
-You are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps.
+You are climbing a staircase. Each time you can either climb 1 or 2 steps. It takes n steps to reach the top.
 
-If there is 0 stair, there is 0 way to the top. For negative input, please return -1.
+If there are 0 stairs, there is 0 way to the top. For negative input, please return -1.
 
 For example, if the stairs number is 4(n = 4), it should have 5 ways to the top.\
 1 + 1 + 1 + 1\
@@ -148,9 +149,9 @@ For example, if the stairs number is 4(n = 4), it should have 5 ways to the top.
 2 + 2
 
 Please create your test cases and run the following command to verify the functionality of your program.
-```
+
+```bash
 bazel test tests:q7_student_test
 ```
 
 Answer:
-
